@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(0, 0, 0);
+        }
+        .header{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu ul{
+            /* float: none; */
+            list-style: none;
+            /* margin-left: 10px; */
+            /* padding: 10px; */
+            background-color: aquamarine;
+        }ul{
+            padding: 10px;
+        }
+        li{
+            padding: 10px;
+            margin-top: 5px;
+            background-color: antiquewhite;
+        }
+        .content{
+            float: left;
+            background-color: azure;
+            padding: 10px;
+        }
+        .side{
+            background-color: beige;
+        }
+
+        [class*="col-"]{
+            float: left;
+            /* padding: 15px; */
+        }
+
+.col-4 {width: 33.33%;}
+
+
+
+
+        @media only screen and (max-width:768px) {
+            [class*="col-"]{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="row">
+            <div class="col-4 menu">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>React Js</li>
+                    <li>Node Js</li>
+                </ul>
+            </div>
+            <div class="col-4 content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia eaque consequuntur officia porro suscipit quam temporibus neque iusto magnam esse! Corporis corrupti amet tempora quaerat accusantium rem iusto quae.</p>
+            </div>
+            <div class="col-4 side">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit reiciendis fuga aliquid cumque animi illum. Accusantium, cumque doloremque impedit nihil minus quasi vero, tempora architecto minima molestias in. Dolorum.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

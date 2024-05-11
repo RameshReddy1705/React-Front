@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            /* height: 2000px; */
+            
+        }
+        .container{
+            position: relative;
+        }.position{
+            position: sticky;
+            top: 0;
+        }
+        .header{
+            
+            color: bisque;
+            background-color: azure;
+            text-align: center;
+            padding: 20px;
+        }
+        .column {
+            float: left;
+            width: 20%;
+            padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content1{
+    float: left;
+    width: 300px;
+    height: 600px;
+    background-color: aquamarine;
+}
+.content2{
+    float: right;
+    width: 300px;
+    height: 600px;
+    background-color: aquamarine;
+    
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="position">
+            <h1 class="header">Header</h1>
+        </div>
+    
+        <div class="content1">
+            <h1>Content1</h1>
+        </div>
+        <div class="content2">
+            <h1>Content1</h1>
+        </div>
+    
+    
+        <div class="row">
+            <div class="column">
+                <h1>Column 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque in odit sint laboriosam at dolore maxime vel soluta, maiores minima animi modi qui ipsa commodi illo libero, nesciunt voluptate!</p>
+            </div>
+            <div class="column">
+                <h1>Column 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque in odit sint laboriosam at dolore maxime vel soluta, maiores minima animi modi qui ipsa commodi illo libero, nesciunt voluptate!</p>
+            </div>
+            <div class="column">
+                <h1>Column 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque in odit sint laboriosam at dolore maxime vel soluta, maiores minima animi modi qui ipsa commodi illo libero, nesciunt voluptate!</p>
+            </div>
+        </div>
+
+
+
+        
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

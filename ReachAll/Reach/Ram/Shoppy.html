@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E lite Shoppy</title>
+    <link rel="stylesheet" href="Shoppy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,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"
+    
+</head>
+<body>
+    <div class="header">
+        <div class="col-3 sigin">
+            <i class="fa-solid fa-lock"></i>
+            <a href="#">sign In</a>
+        </div>
+        <div class="col-3 signup">
+            <i class="fa-solid fa-lock"></i>
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="col-3 phone">
+            <i class="fa-solid fa-phone"></i>
+            <a href="#">+91 9705582615</a>
+        </div>
+        <div class="col-3 email">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="#">info@example.com</a>
+        </div>
+    </div>
+
+    <div class="header2">
+        <div class="col-3 search">
+            <input type="text" placeholder="Search Here For SomeThing . . . . . . . . . . .">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(104, 106, 108);"></i>
+            <!-- <img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt=""> -->
+        </div>
+        <div class="col-6 brand">
+            <h1><mark>E</mark>lite Shoppy</h1>
+        </div>
+        <div class="col-3 icons">
+            <!-- <h6>Share on :</h6> -->
+            <p>Share on :
+            <img src="https://techreachall.com/Facebook.svg" alt="">
+            <!-- <hr class="f-line"> -->
+            <img src="https://techreachall.com/Instagram.svg" alt="">
+            <img src="https://techreachall.com/LinkedIn.svg" alt="">
+            <img src="https://techreachall.com/Twitter.svg" alt="">
+            <img src="https://techreachall.com/YouTube.svg" alt="">
+            <img src="https://techreachall.com/Pinterest.svg" alt="">
+        </p>
+        </div> 
+    </div>
+
+    <div class="header3">
+       <div class="col-10 menu">
+        <div class="menulogo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8AAADV1dXQ0NCNjY19fX3u7u4WFhaWlpatra329va0tLTb29v7+/vY2NjIyMjo6Og+Pj7h4eHCwsJkZGRxcXFpaWmhoaHr6+swMDCkpKR3d3fy8vJtbW1ZWVmioqKFhYUjIyM3NzcsLCxOTk4TExOTk5NKSkq6uroLCwuKiopBQUEcHBxdXV0RiujiAAAE00lEQVR4nO2d3XaiMBRGUVt/qCDSOqJSitrR1tb3f72pWhSnxBg5JCf02xfeJLK+vUiFEnLiOAAAAAAQ0na/iIIgDIM9YX+P7/e/8Zvl8fP0fxDKCXK0r5YLNn8bVpL0rzt5W9NBS7AN5YJd0yFLMnIv+0UL0wnL07okGJpOR8KbWDA2nY2IgdBwfd5x9XAjvfJM87y8jM/onrNadWfnyUXXjWm+0+Th8l8sM4IkHz4p7uTmuvx91BuQgEf5OB2dOsw0pyPBy53GeVGH6NQ+1h2OiPSkUDQGU+sFHWdzdFgUtB4bR9qD0fF0tPB/NmZN7/pzEXL8n6HgziZrunBHYAFNueFSfypS/kgNe/pDkRJJDSX/fPBnJDH8oz8SMXcSQ9sH6a829GBoCzCsv+HUQCZaYAhD/ggNXRjaAgzrb/hiIBMtMLT3WWkGDGHIH6FhDENbgGH9DbsGMtECQxjyR2jYhqEtwBCG/IHhykAmWoSGEQxtAYYw5A8M7wxkokVoGMDQFioy3C1WbMcH2mU4HGJ3ONdjYejdJYvJZ6ea9YqdznKyWM+uW1R4teFG6Wh6VoKpvcVEauhpEWw0lM4iqeGdJsOtMcNPTYYNlR8dSkNdg1S82q5qQ0cciRjKc5iqGM7EmUhZq4QiNYzEoUgRr3qt2tB50yKo9nSM1tDxk3nVfh+Ky1mFhuFNhjs871A4Y1+jon/4bLUGIlqta6tmhEHkqd+cVmDIDBim2hNRA8NUeyJqYJhqT0SNzPDeQCZaYAhD/sAQhvyBIQz5A0Mra2CdITTsw9AW6A0913XjfFlYv1WaffXZ+LaJYGLDsPLnpfO10hNvasNBxXoH1GbeSQ3bWgSp5i1uMdQ19zQ0ZqhJUK08F6WhvjngiNBQqWiitnl8lVCkhhtxJlKUSqyRGuoapiovKtAaZl+qGLUpUlpDx10l6+FwXqmgYjFOYsNvvB3ujXgSFLNUY8gJGNbY0IehLcAQhvyBIQz5A8P6Gz4byEQLDGHIHxjCkD8wVDb0gmZzMHg88tCbjru5HeL+3wbuKqa7r759HW3QCgwbvmnYsTQ1aTiu3q+huHSN1lDPQ33FaW5SwydxKFqMGeoSpJkhvcFQ3xywyg8q6Tmc6DJUCUVqqOenVPF6ITNU27NrqcdQaYKN1jDWMU4/1W5raA0d53G1GSVJ8rEYLhbDL/Yfw8ly3inB53Lyxe5Qr9tUtbKx0LB5myE/YAhD/sAQhvyBYY0Nb7yn4QcMYcgfGMKQPzLDJwOZaIEhDPkDQxjyB4Yw5A8MYcgfGMKQP7/YsA9DW4AhDPkjq2YGQ/7AEIb8ke1vUWPDqPaGce0N3UODUmk0lsxEhtmL94pVCtmR1QEUG070hyLlXmqouBcfN477FRYYvmdtsf5cdCwuGG6zNpt/bNJMomjPxN6x0d4rxsnho6DVPbZa+0LGSbD4kpCrRvp64z6uZjkN0caisEPcyKG42RkDmvNcfMFV/WwZ06uvN2BJgrO1kMKNS1/zvRrJvT08nyUX16z1Oo1acGF33fhd/nX+FFzsT7hr0/HKI9sfuWs6YEme5HWj43v5YdiSXByhp6HaG2lb4UvIcjtWLTGx25ygHR42Ge371+4eWgl+/weHfU+DYJdSUQwAAAD4dfwDBE99KxThV0wAAAAASUVORK5CYII=" alt="">
+        </div>
+        <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#" class="mens">Men's Wear</a>
+                <div class="mensdropdown">
+                    <a href="">Shirts</a>
+                    <a href="">Shirts</a>
+                    <a href="">Shirts</a>
+                </div>
+            <a href="#">Women's Wear</a>
+            <a href="#">Short Codes</a>
+            <a href="#">Contact</a>
+        </div>
+       </div>
+       <div class="col-2 cart">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+    </div>
+    <div class="col-12 home">
+        <img src="https://boldoutline.in/wp-content/uploads/2019/04/IMG_1554968809382.jpeg" alt="">
+        <div class="col-1 text">
+            <h1>SUMMER COLLECTION</h1>
+            <h5><b>New Arrivals On Sales</b></h5>
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+    <div class="new">
+        <p><b>NEW</b> ARRIVALS</p>
+    </div>
+
+
+    <div class="products" style="margin-top: 10px;">
+        <div class="col-3 shirt">
+            <div class="box">
+                <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+            </div>
+            
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="products" style="margin-top: 350px;">
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+            
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+        <div class="col-3 shirt">
+            <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <p>Formal White shirt</p>
+            <p>$45.99  <del>$69.71</del></p>
+            <button><a href="#">Add To Cart</a></button>
+            <h3>New</h3>
+        </div>
+        </div>
+    </div>
+    <!-- <hr> -->
+
+
+    <div class="shipping">
+        <div class="col-3 shipping1">
+            <div class="one">
+                <img src="https://png.pngtree.com/png-clipart/20191121/original/pngtree-free-shipping-icon-png-image_5092424.jpg" alt="">
+            </div>
+            <div class="one">
+                <h4>Free Shipping</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="col-3 shipping1">
+            <div class="one">
+                <img src="https://t3.ftcdn.net/jpg/04/43/98/24/360_F_443982441_rBudWjP3eXwZ20EAZhvIWNLx4jDr1kup.jpg" alt="">
+            </div>
+            <div class="one">
+                <h4>24/7 Support</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="col-3 shipping1">
+            <div class="one">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaXz0NlMjI4PgjT4xKM-876AU1XJ9UEtJWHu1f2j-i8EIMpYdmdN9Y0m901m9TwUDdak&usqp=CAU" alt="">
+            </div>
+            <div class="one">
+                <h4>Money Back Gaurenty</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="col-3 shipping1">
+            <div class="one">
+                <img src="https://png.pngtree.com/png-vector/20220423/ourmid/pngtree-discount-coupon-icon-voucher-with-percent-sign-png-image_4553846.png" alt="">
+            </div>
+            <div class="one">
+                <h4>Gift Cupons</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col-3 line1">
+            <h1><mark>E </mark>lite Shoppy</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laborum dolore fugit fuga placeat a repellendus corporis, reiciendis mollitia consequatur ratione quod accusantium.</p>
+           <div class="ficons">
+            <img src="https://techreachall.com/Facebook.svg" alt="">
+            <!-- <hr class="f-line"> -->
+            <img src="https://techreachall.com/Instagram.svg" alt="">
+            <img src="https://techreachall.com/LinkedIn.svg" alt="">
+            <img src="https://techreachall.com/Twitter.svg" alt="">
+            <img src="https://techreachall.com/YouTube.svg" alt="">
+            <img src="https://techreachall.com/Pinterest.svg" alt="">
+           </div>
+            
+        </div>
+        <div class="col-3 line2">
+            <p><b>OUR </b> INFORMATION</p>
+            <div class="information">
+                <a href="#">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Men's Wear</a><br>
+                <a href="#">Women's Wear</a><br>
+                <a href="#">Short Codes</a><br>
+                <a href="#">Contact</a>
+            </div>
+            
+        </div>
+        <div class="col-3 line3">
+            <p><b>STORE </b> INFORMATION</p>
+            <!-- <h4>Phone Number</h4> -->
+            <p class="fo"><i class="fa-solid fa-phone"></i>+91 9705582615</p>
+            <h4 style="color: rgb(189, 189, 183);"><i class="fa-regular fa-envelope"></i>  info@example.com</h4>
+            <!-- <p class="fo">Phone Number</p> -->
+            <!-- <h4>Location</h4> -->
+            <!-- <p class="fo">Kadapa</p> -->
+            
+        </div>
+        <div class="col-3 line4">
+            <p><b>FLICKR </b> POSTS</p>
+            <div class="fit1">
+                <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <img src="https://assets.telegraphindia.com/telegraph/2023/Jan/1672633420_ntr-30.jpg" alt="">
+            <img src="https://in.hellomagazine.com/images/0284-18d9de0d2a39-e6cc1d4c0fe8-1000/horizontal-1200/jr-ntr.jpg" alt="">
+
+            <img src="https://i.pinimg.com/236x/47/8b/63/478b638ed6fd928401c0b39cf05e3b4e.jpg" alt="">
+            </div>
+
+            <div class="fit1">
+                <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <img src="https://i.pinimg.com/236x/47/8b/63/478b638ed6fd928401c0b39cf05e3b4e.jpg" alt="">
+
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            </div>
+
+            <div class="fit1">
+                <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            <img src="https://i.pinimg.com/236x/47/8b/63/478b638ed6fd928401c0b39cf05e3b4e.jpg" alt="">
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+
+            <img src="https://static.toiimg.com/thumb/msid-82792923,width-1070,height-580,imgsize-1048432,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+            </div>   
+        </div>
+    </div>
+
+    
+</body>
+</html>

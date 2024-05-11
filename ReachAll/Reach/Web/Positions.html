@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            opacity: 0.5;
+            z-index: 3;
+        }
+        body{
+            height: 2000px;
+        }
+        .container{
+            position: relative;
+            
+        }
+        .topleft{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+        .topright{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+        .bottomleft{
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+        }
+        .bottomright{
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+        }
+        .center{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            text-align: center; 
+            z-index: 2;
+        }
+        /* .centerside{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            text-align: end; 
+            z-index: 2;
+        } */
+        .center1{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: end; 
+            z-index: 1;
+        }
+        
+        .tree{
+            height: 300px;
+            width: 300px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://techreachall.com/Service%20Banners/IT-Consulting&-Advisory.jpg" alt="">
+        <div class="topleft">
+            <h1>Ramesh</h1>
+        </div>
+        <div class="topright">
+            <h1>Ramesh</h1>
+        </div>
+        <div class="bottomleft">
+            <h1>Ramesh</h1>
+        </div>
+        <div class="bottomright">
+            <h1>Ramesh</h1>
+        </div>
+        <div class="center">
+            <h1>Ramesh</h1>
+            <img class="tree" src="https://techreachall.com/consult_works_1x1_3x4_Small.jpg" alt="">
+        </div>
+        <div class="center1">
+            <h1>Ramesh</h1>
+            <!-- <img class="tree" src="https://www.w3schools.com/css/img_tree.png" alt=""> -->
+        </div>
+        <!-- <div class="centertree">
+            <img class="tree" src="https://www.w3schools.com/css/img_tree.png" alt="">
+            <h1>Reddy</h1>
+        </div> -->
+    </div>
+    
+</body>
+</html>

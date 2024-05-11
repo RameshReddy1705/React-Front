@@ -1,0 +1,696 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header1{
+    height: 30px;
+    background-color: rgb(179, 174, 174);
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
+.header1 .email, .phone, .time{
+    margin: 0;
+    margin-top: 5px;
+}
+
+.header2{
+    height: 60px;
+    background-color: rgb(255, 89, 0);
+    position: sticky;
+    z-index: 1;
+    top: 30px;
+}
+.header2 .brand{
+    padding-left: 190px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+.header2 .menu{
+    margin-top: 20px;
+}
+.header2 .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+.header2 .menu button{
+    width: 80px;
+    position: relative;
+    left: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    color: rgb(255, 89, 0);
+}
+.header2 .menu img{
+    height: 20px;
+    width: 40px;
+    display: none;
+}
+.menu-content a{
+    /* margin-right: 5px; */
+    padding-right: 20px;
+}
+.menu-content a:hover{
+    /* background-color: aliceblue; */
+    border-bottom: black;
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px white;
+    /* filter: drop-shadow(10px 7px 10px rgb(12, 12, 12)); */
+}
+
+/* ---------------- */
+/* Recipes */
+.maindelicious{
+    height: 500px;
+    background-color: aliceblue;
+    
+}
+.maindelicious .delicious .pdelicious{
+    font-size: 40px;
+    margin-left: 190px;
+    margin-top: 130px;
+}
+.maindelicious .delicious h1{
+    /* text-align: center; */
+    margin-left: 190px;
+}
+.maindelicious .delicious .lorem{
+    text-align: justify;
+    margin-left: 190px;
+    margin-right: 80px;
+    margin-top: 30px;
+    
+}
+.maindelicious .delicious .lorem .button1{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: azure;
+    font-size: medium;
+}
+.maindelicious .delicious .lorem .button2{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(245, 16, 16);
+    color: azure;
+    font-size: medium;
+    
+}
+.maindelicious .deliciousimg img{
+    margin-top: 20px;
+    border-radius: 400px;
+    /* height: 400px;
+    width: 370px; */
+}
+
+
+.maindelicious button{
+    margin-top: -200px;
+}
+
+
+/*  */
+
+/* Footer */
+
+.footer{
+    margin-top: 10px;
+    height: 200px;
+    background-color: black;
+    /* border: 2px solid red; */
+    color: aliceblue;
+    /* padding-left: 100px; */
+}
+.footer .line1{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer .line1 h3{
+    margin-left: -70px;
+    color: #7a7b7c;
+}
+.footer .line1 p{
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: rgb(118, 123, 128);
+}
+.footer .line1 h1 mark{
+    background-color: aqua;
+
+}
+/* .footer .line1 .ficons{
+    height: 30px;
+    width: 20px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+} */
+
+.footer .line2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .line2 .information{
+    text-align: justify;
+    margin-left: 115px;
+}
+.footer .line2 .information a{
+    text-decoration: none;
+    color: rgb(118, 123, 128);
+    
+}
+.footer .line3{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line3 .fo{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(122, 124, 127);
+}
+.foc{
+    margin-left: -35px;
+    color: #bfcfdf;
+}
+.footer .line4{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line4 img{
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+.line4 .footericons{
+    height: 10px;
+    width: 10px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* About Us */
+
+.aboutus{
+    height: 300px;
+    background-color: beige;
+}
+.aboutus .matter h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.aboutus .matter .plorem{
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.aboutus .imgabout img{
+    height: 250px;
+    width: 300px;
+    margin-top: 30px;
+}
+.abo{
+    display: flex;
+}
+.healthy img{
+    height: 70px;
+    width: 70px;
+    margin-left: 200px;
+    margin-top: 15px;
+    border-radius: 30px;
+    
+}
+.healthy p{
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.test h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.test .mary p{
+    padding: 40px;
+    background-color: palevioletred;
+    margin-left: 50px;
+
+}
+.test .mary .mmm{
+    margin-right: 40px;
+   margin-top: -8px;
+}
+/* .test .mary .mmm:hover{
+    background-color: #7a7b7c;
+} */
+.test .mary p:hover{
+    background-color: #7a7b7c;
+}
+.imgprofile{
+    display: flex;
+}
+.imgprofile img{
+    height: 70px;
+    width: 70px;
+    margin-left: 60px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.imgprofile h4{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.imgprofile h6{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #7a7b7c;
+}
+
+.blog1{
+    height: 375px;
+    margin-top: 300px;
+    background-color: #bfcfdf;
+}
+.blog1 .blog1matter{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.blog1 .blog1matter p,h1{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.blog1 .blog1img img{
+    height: 350px;
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 120px;
+
+}
+.blog1img{
+    position: relative;
+}
+.blog1img h3{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: rgb(80, 64, 64);
+    background-color: white;
+}
+
+
+.blog2{
+    height: 375px;
+    /* width: 80%; */
+    margin-top: 10px;
+    background-color: #e8ebee;
+}
+.blog2 .blog2matter{
+    margin-top: 80px;
+    padding-right: 50px;
+    /* margin-left: 5px; */
+}
+.blog2 .blog2matter p,h1{
+    margin-left: -90px;
+    margin-top: 10px;
+}
+.blog2 .blog2img img{
+    height: 350px;
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.blog2img{
+    position: relative;
+}
+.blog2img h3{
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    color: rgb(80, 64, 64);
+    background-color: white;
+}
+.red{
+    height: 150px;
+    background-color: rgb(248, 113, 82);
+    align-items: center;
+}
+.red h1,h6{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+body{
+    position: relative;
+}
+.whatsApp{
+    position: fixed;
+    bottom: 130px;
+    right: 80px;
+}
+.whatsApp img{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    animation-name: whatsapp;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes whatsapp{
+    0%{
+        top: -80px;
+    }
+    25%{
+        top: 40px;
+    }
+    50%{
+        top: -80px;
+    }
+    75%{
+        top: 40px;
+    }
+    100%{
+        top: -80px;
+    }
+}
+
+
+
+
+
+
+
+
+[class*="col-"]{
+    float: left;
+    /* padding: 10px; */
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/* For Mobile */
+@media only screen and (max-width: 320px){
+    .header1{
+        display: none;
+    }
+    .header2 .menu{
+        position: absolute;
+    }
+    .header2 .menu img{
+        display: flex;
+    }
+
+     /* Recipes */
+.maindelicious{
+    height: 10000px;
+    background-color: aliceblue;
+    
+}
+.maindelicious .delicious .pdelicious{
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: -160px;
+}
+.maindelicious .delicious h1{
+    /* text-align: center; */
+    margin-left: 10px;
+}
+.maindelicious .delicious .lorem{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    
+}
+.maindelicious .delicious .lorem .button1{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: azure;
+    font-size: medium;
+}
+.maindelicious .delicious .lorem .button2{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(245, 16, 16);
+    color: azure;
+    font-size: medium;
+    
+}
+.maindelicious .deliciousimg img{
+    margin-top: 20px;
+    border-radius: 400px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    /* float: left; */
+}
+
+
+.maindelicious button{
+    margin-top: -200px;
+}
+
+
+/*  */
+.footer{
+    height: 900px;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 30px;
+    height: 325px;
+    background-color: black;
+    /* border: 2px solid red; */
+    color: aliceblue;
+    /* padding-left: 100px; */
+}
+.footer .line1{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line1 p{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 50px;
+    color: rgb(118, 123, 128);
+}
+.footer .line1 h1 mark{
+    background-color: aqua;
+
+}
+.footer .line1 .ficons{
+    height: 30px;
+    width: 20px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.footer .line2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .line2 .information{
+    text-align: justify;
+    margin-left: 25px;
+}
+.footer .line2 .information a{
+    text-decoration: none;
+    color: rgb(118, 123, 128);
+    
+}
+.footer .line3{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line3 .fo{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(122, 124, 127);
+}
+.footer .line4{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line4 img{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+/*  */
+
+    
+}
+
+
+/* For Tab */
+@media only screen and (max-width: 768px){
+    .header2 .brand{
+        margin-left: -130px;
+    }
+    .header2 .menu{
+        position: absolute;
+        display: none;
+    }
+    .header2 .menu img{
+        display: block;
+    }
+    /* Recipes */
+.maindelicious{
+    height: 400px;
+    background-color: aliceblue;
+    /
+}
+.maindelicious .delicious .pdelicious{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.maindelicious .delicious h1{
+    /* text-align: center; */
+    margin-left: 10px;
+}
+.maindelicious .delicious .lorem{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    
+}
+.maindelicious .delicious .lorem .button1{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: azure;
+    font-size: medium;
+}
+.maindelicious .delicious .lorem .button2{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(245, 16, 16);
+    color: azure;
+    font-size: medium;
+    
+}
+.maindelicious .deliciousimg img{
+    margin-top: 20px;
+    border-radius: 400px;
+    height: 370px;
+    width: 370px;
+}
+
+
+.maindelicious button{
+    margin-top: -200px;
+}
+
+
+/*  */
+
+/* Footer */
+
+.footer{
+    margin-top: 30px;
+    height: 325px;
+    background-color: black;
+    /* border: 2px solid red; */
+    color: aliceblue;
+    /* padding-left: 100px; */
+}
+.footer .line1{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line1 p{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 50px;
+    color: rgb(118, 123, 128);
+}
+.footer .line1 h1 mark{
+    background-color: aqua;
+
+}
+.footer .line1 .ficons{
+    height: 30px;
+    width: 20px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.footer .line2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .line2 .information{
+    text-align: justify;
+    margin-left: 25px;
+}
+.footer .line2 .information a{
+    text-decoration: none;
+    color: rgb(118, 123, 128);
+    
+}
+.footer .line3{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line3 .fo{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(122, 124, 127);
+}
+.footer .line4{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .line4 img{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+/*  */
+
+
+    
+}

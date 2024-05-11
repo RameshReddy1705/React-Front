@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+                box-sizing: border-box;
+        }
+        .header{
+            text-align: center;
+            border: 2px solid red;
+            /* background-color: aqua; */
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 15px;
+            /* border: 2px solid red; */
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.menu li{
+    padding: 10px;
+    margin-bottom: 7px;
+    background-color: antiquewhite;
+    color: black;
+}
+.menu li:hover{
+    background-color: aliceblue;
+}
+.aside{
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+              <li>The Flight</li>
+              <li>The City</li>
+              <li>The Island</li>
+              <li>The Food</li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+          </div>
+          <div class="col-3 aside">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque maxime enim officia. Nostrum possimus ipsa perferendis nam, cumque voluptas, sed dicta rem quia veritatis dolor consequuntur itaque fugit omnis!</p>
+          </div>
+
+          <div class="footer">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis explicabo tenetur, magni quae esse aliquid labore ab totam exercitationem sapiente nostrum, odit, corrupti quidem ducimus molestiae impedit excepturi dolore!
+            </p>
+          </div>
+    </div>
+</body>
+</html>
